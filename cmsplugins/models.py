@@ -1,7 +1,7 @@
 from django.db import models
 from colorfield.fields import ColorField
 from cms.models.pluginmodel import CMSPlugin
-from djangocms_text_ckeditor.fields import HTMLField
+from djangocms_text.fields import HTMLField
 from filer.fields.image import FilerImageField
 # Create your models here.
 
