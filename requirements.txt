@@ -162,7 +162,7 @@ wheel==0.44.0
     # via pip-tools
 whitenoise==6.7.0
     # via -r requirements.in
-
+django-colorfield
 # The following packages are considered to be unsafe in a requirements file:
 # pip
 # setuptools
