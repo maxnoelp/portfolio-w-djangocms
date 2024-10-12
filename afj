@@ -1,0 +1,559 @@
+[33mcommit 8114833ea7322a2305b7779bc9a85fefdc5aec08[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Max <noelpmax@gmail.com>
+Date:   Sat Oct 12 19:17:08 2024 +0200
+
+    create model FirstContentItem
+
+[33mcommit 8c6cdea5bdec826c727fd954654894cc7945f5a6[m
+Author: Max <noelpmax@gmail.com>
+Date:   Sat Oct 12 18:59:53 2024 +0200
+
+    initial commit
+
+[33mcommit 584bb238dca374a051141a59eb4a9b76b85a9cf2[m
+Author: Mario Colombo <mario@macolo.me>
+Date:   Thu Sep 5 06:54:38 2024 +0200
+
+    upgrade to django 5 (#66)
+
+[33mcommit 3368f91429cea9f7066e3b48fc28030978b39b0a[m
+Author: Mario Colombo <mario@macolo.me>
+Date:   Thu Sep 5 04:18:29 2024 +0200
+
+    Create FUNDING.yml
+
+[33mcommit ad84c3b9918b53f601c1d6d04ebe8045f8e0b31d[m
+Author: Mario Colombo <mario@what.digital>
+Date:   Wed Sep 4 16:20:43 2024 +0200
+
+    update djangocms-text
+
+[33mcommit ca4b821cfd14663cec1e07bd30fc3f98d658c732[m
+Author: Mario Colombo <mario@macolo.me>
+Date:   Thu Aug 22 12:23:45 2024 -0600
+
+    Clean up README.rst
+
+[33mcommit ca9f94689018fcb18ab7473f0f1a6b9d4b3b103a[m
+Author: Mario Colombo <mario@macolo.me>
+Date:   Thu Aug 22 12:00:07 2024 -0600
+
+    Update README.rst
+
+[33mcommit 742f249db88f4d3fd910c459acbac0216d5efd0f[m
+Author: Mario Colombo <mario@macolo.me>
+Date:   Tue Aug 20 23:43:47 2024 -0600
+
+    support for djangocms-text (#65)
+    
+    * support for djangocms-text
+    
+    * add --rm to docker compose run commands
+    
+    * Update requirements.txt
+    
+    upgrade djangocms-text
+    
+    * switch Manifest mode on again
+    
+    ---------
+    
+    Co-authored-by: Mario Colombo <mario@what.digital>
+
+[33mcommit 3ee291504407d1a8fde5a5cbd406ce55c6c4470d[m
+Author: Fabian Braun <fsbraun@gmx.de>
+Date:   Wed Jul 24 16:28:27 2024 +0200
+
+    Update README.rst
+
+[33mcommit baf76d785869b3b760d71ae248ab428a571b7225[m
+Author: Fabian Braun <fsbraun@gmx.de>
+Date:   Mon Jul 8 18:29:00 2024 +0200
+
+    feat: Make bootstrap template the default for faster ramp-up (#63)
+
+[33mcommit 674b444d6adc82349ad2b6c23a5537c520aecfee[m
+Author: Mark Walker <mark@django-cms.org>
+Date:   Sat Jan 13 21:15:49 2024 +0000
+
+    test: docker test (#60)
+    
+    * chore: Remove workflow as it's not really doing a lot
+    
+    * chore: Some good practice updates to Dockerfile
+    
+    * test: Run the docker processes that people need to be able to run
+
+[33mcommit a39c859eaa33ca1c6e931bf0a70e52f7d5244fee[m
+Author: Fabian Braun <fsbraun@gmx.de>
+Date:   Sat Jan 13 12:09:29 2024 +0100
+
+    Fix: djangocms-frontend 1.2.1 references non-existing static files causing whitenoise to fail (#59)
+
+[33mcommit be996aa6f9a38830afac23940e8e61c56e50393e[m
+Author: Fabian Braun <fsbraun@gmx.de>
+Date:   Sun Dec 31 13:44:38 2023 +0100
+
+    feat: django 4.2 and django CMS 4.1 (#57)
+    
+    * Update readme
+    
+    * Update to django CMS 4.1rc3
+    
+    * Update dependencies on djangocms-versioning and djangocms-alias
+    
+    * Update requirements to include filer 3.0
+    
+    * Add Django-4.2 and django CMS 4.1 support
+    
+    * Update requirements.in
+    
+    * Update github action
+
+[33mcommit 21fa750d753c0a689c129804cab23f01ab45363f[m
+Author: Jens-Erik Weber <MacLake@users.noreply.github.com>
+Date:   Tue Aug 15 10:06:20 2023 +0200
+
+    Make database persistent, set ext. postgres port with env. variable, … (#53)
+    
+    * Make database persistent, set ext. postgres port with env. variable, docs
+    
+    Create a named volume in order to keep the database content after containers
+    have been deleted with docker compose down.
+    
+    To access the postgres instance in the docker container from the host, an
+    external port number can be set.
+    
+    Update documentation
+    
+    * Update .gitignore
+    
+    Co-authored-by: Mark Walker <theshow@gmail.com>
+    
+    * Update compose.yaml
+    
+    more generic, shorter db port name
+    
+    Co-authored-by: Mark Walker <theshow@gmail.com>
+    
+    * Reflect renaming of the db port env. variable to DB_PORT in the docs
+    
+    * Fix typos, version numbers in the documentation, formatting
+    
+    Update version numbers in the documentation
+    Keep line length to max. 120 where possible
+    
+    ---------
+    
+    Co-authored-by: Jens-Erik Weber <Jens-Erik Weber Jens-Erik.Weber@passiv.de>
+    Co-authored-by: Mark Walker <theshow@gmail.com>
+
+[33mcommit aa17d8221c1c3ca9a40f4b4e304ca832a2c7bb96[m
+Author: Fabian Braun <fsbraun@gmx.de>
+Date:   Tue Jul 18 11:02:53 2023 +0200
+
+    ci: Update requirements.txt to include filer 3.0 (#47)
+    
+    * Update readme
+    
+    * Update to django CMS 4.1rc3
+    
+    * Update dependencies on djangocms-versioning and djangocms-alias
+    
+    * Update requirements to include filer 3.0
+
+[33mcommit 9947c280007ec98101a44890346ec52ef9fd5cd3[m
+Author: Fabian Braun <fsbraun@gmx.de>
+Date:   Tue May 30 15:01:46 2023 +0200
+
+    feat: use djangocms-versioning>=2.0.0rc1 and djangocms-alias>=2.0.0rc1 (#43)
+    
+    * Update readme
+    
+    * Update to django CMS 4.1rc3
+    
+    * Update dependencies on djangocms-versioning and djangocms-alias
+
+[33mcommit 67a1afb5df138dac1de8b8b185e23f5f2bd252af[m
+Author: Fabian Braun <fsbraun@gmx.de>
+Date:   Fri May 26 15:33:13 2023 +0200
+
+    ci: Move to Django CMS 4.1rc3 (#41)
+    
+    * Update readme
+    
+    * Update to django CMS 4.1rc3
+
+[33mcommit 965f2ee2060ca061870c0a2b27bcc27eb1eccd34[m
+Author: Fabian Braun <fsbraun@gmx.de>
+Date:   Tue Jan 24 16:26:51 2023 +0100
+
+    Update README.md
+
+[33mcommit 2b7e9ff562efa4866e76b54b124bf0e7771eac42[m
+Author: Fabian Braun <fsbraun@gmx.de>
+Date:   Tue Jan 24 16:09:13 2023 +0100
+
+    Update README.md
+
+[33mcommit 6714a67c4dab2ba2f551ee03ef0742f622438e28[m
+Author: Fabian Braun <fsbraun@gmx.de>
+Date:   Mon Jan 16 19:32:07 2023 +0100
+
+    feat: create support/cms-4.1.x branch for quick install of django CMS 4.1 (#39)
+    
+    * Repalce djangocms-bootstrap4 by djangocms-frontend
+    * Add: Parler to INSTALLED_APPs for djangocms_alias
+    * feat: use 4.1.0rc1
+    * Update tests
+    * Update python version to 3.10
+
+[33mcommit c35accdbee027bdf6f07edc1860e21f881147193[m
+Merge: 30d1ff5 fc177b2
+Author: Mario Colombo <mario@what.digital>
+Date:   Tue Jun 14 11:29:20 2022 +0200
+
+    upgrade to latest dcms v4 state
+
+[33mcommit fc177b24abfcf8ccd5ca50c0d31051ec7afeb5e4[m
+Author: Richard Johnson <Richard.johnson@me.com>
+Date:   Wed May 4 12:21:56 2022 -0400
+
+    Update postgres image to 13.5 (#31)
+    
+    Divio migrated the databases from postgress 9.6 to 13. More info: https://www.divio.com/blog/postgres_migration_from_9_6_to_13/
+
+[33mcommit d7a706297ede393ec8f972eb1d5271a625af1b5d[m
+Author: Simon Krull <simon@django-cms.org>
+Date:   Thu Apr 28 13:58:08 2022 +0200
+
+    TASK: Delete unused line in README (#30)
+
+[33mcommit b5e258da35837d261b313c32e8fc7361ed2fb236[m
+Author: Abdur-Rahmaan Janhangeer <cryptolabour@gmail.com>
+Date:   Thu Apr 28 14:04:13 2022 +0400
+
+    Update README.md: Add note about docker compose (#27)
+    
+    * Update README.md
+    
+    * Update README.md
+    
+    Co-authored-by: Simon Krull <simondotunix@gmail.com>
+    
+    * Update README.md
+    
+    Co-authored-by: Simon Krull <simondotunix@gmail.com>
+    
+    Co-authored-by: Simon Krull <simondotunix@gmail.com>
+
+[33mcommit e6555a9019287bf1e6ee7f40b19ca1b2eff358bc[m
+Author: Simon Krull <krull@punkt.de>
+Date:   Wed Apr 13 22:22:35 2022 +0200
+
+    TASK: increase django version regarding dark mode support/ EOL of django 3.1 (#29)
+    
+    * TASK: increase django version regarding dark mode support
+    
+    * TASK: bump django version to 3.2.13
+
+[33mcommit 6b5bf9f2d3e32ef0d0dde46cb91e147663f3e406[m
+Author: Simon Krull <krull@punkt.de>
+Date:   Wed Apr 13 20:40:20 2022 +0200
+
+    TASK: update versions for django-cms and djangocms-admin-style (#28)
+
+[33mcommit 30d1ff5122fd578620afbdb136956188f79e2f74[m
+Author: Mario Colombo <mario@what.digital>
+Date:   Mon Feb 21 23:02:26 2022 +0100
+
+    fix cannot import name 'available_attrs'
+
+[33mcommit 76339089be400afb6031562236001af16c7df965[m
+Author: Simon Krull <simondotunix@gmail.com>
+Date:   Fri Nov 19 14:59:12 2021 +0100
+
+    TASK: Update dependencies for django-filer (#23)
+
+[33mcommit 51d31ef5fac36a4a177612a8819a1bbd92a224c8[m
+Author: Mario Colombo <mario@what.digital>
+Date:   Thu Oct 21 14:18:58 2021 +0200
+
+    updated to latest main branch changes
+
+[33mcommit 336f37489923214fafc91b9169c02a89035dd759[m
+Merge: 7191608 409d9da
+Author: Mario Colombo <mario@what.digital>
+Date:   Wed Oct 20 17:09:58 2021 +0200
+
+    Merge branch 'main' into support/cms-4.0.x
+
+[33mcommit 7879b872c2e7daa12e44bbaa6cb162f054b70c94[m
+Merge: 409d9da 6979824
+Author: Mario Colombo <mario@what.digital>
+Date:   Wed Oct 20 17:05:45 2021 +0200
+
+    Merge pull request #21 from django-cms/develop
+    
+    Develop > Main
+
+[33mcommit 69798243e5e5a7760f79c5090a3cfeeaeb2330da[m
+Author: Mario Colombo <mario@what.digital>
+Date:   Wed Oct 20 17:04:38 2021 +0200
+
+    revert to bs4 (as bs5 is still a bit broken)
+
+[33mcommit 965842a1f1ca6fbd3e22c0f4d2403ba531571cec[m
+Merge: ba91d6f 2da9805
+Author: Mario Colombo <mario@what.digital>
+Date:   Wed Oct 20 16:49:20 2021 +0200
+
+    Merge pull request #19 from jpVm5jYYRE1VIKL/patch-4
+    
+    Update docker-compose.yml
+
+[33mcommit 409d9da20d322755e4bbe338865b5b053b5b936c[m
+Author: Nicolai <69975577+NicolaiRidani@users.noreply.github.com>
+Date:   Wed Oct 20 16:13:15 2021 +0200
+
+    Update README.md
+
+[33mcommit 1a84baacc51f105682fd8b059371f7845569b9dc[m
+Author: Nicolai <69975577+NicolaiRidani@users.noreply.github.com>
+Date:   Wed Oct 20 16:09:19 2021 +0200
+
+    Update README.rst
+
+[33mcommit f4780efc5ec794a69e8da43ecbbb08d6daf93f3b[m
+Author: Nicolai <69975577+NicolaiRidani@users.noreply.github.com>
+Date:   Wed Oct 20 16:08:19 2021 +0200
+
+    Update README.rst
+
+[33mcommit b29ae5bfbd97a1e5e670deba984448518b6753ea[m
+Merge: 38fedf7 4869b88
+Author: Mark Walker <theshow@gmail.com>
+Date:   Sat Oct 16 16:27:45 2021 +0100
+
+    Merge pull request #18 from jpVm5jYYRE1VIKL/patch-3
+    
+    Update .env-local
+
+[33mcommit 2da98054ba1306c1b61dba79e9d12ec332b9a061[m
+Author: jpVm5jYYRE1VIKL <fuxfwgc4a2i1gr@gmail.com>
+Date:   Mon Oct 11 16:11:44 2021 +0200
+
+    Update docker-compose.yml
+    
+    Move to fresh compose and fix issue #17
+
+[33mcommit 4869b88a28bd179c88c76462adf8a27c818bfdec[m
+Author: jpVm5jYYRE1VIKL <fuxfwgc4a2i1gr@gmail.com>
+Date:   Mon Oct 11 16:09:29 2021 +0200
+
+    Update .env-local
+    
+    Update to fix issue #16
+
+[33mcommit ba91d6fb727b436ac02f1c6d1ab636b6073c44fd[m
+Author: Mario Colombo <mario@what.digital>
+Date:   Fri Oct 1 12:20:39 2021 +0200
+
+    use frozen requirements
+
+[33mcommit 7191608ad73a29ec774a842fe1d2562cfd64e0af[m
+Merge: 9ef676d 995babf
+Author: Mario Colombo <mario@what.digital>
+Date:   Wed Sep 29 22:10:53 2021 +0200
+
+    Merge pull request #14 from django-cms/update-v4
+    
+    backport
+
+[33mcommit 995babf69dfacea6f81886d510f92d691326a2da[m
+Merge: 38fedf7 9ef676d
+Author: Mario Colombo <mario@what.digital>
+Date:   Wed Sep 29 22:05:48 2021 +0200
+
+    Merge branch 'support/cms-4.0.x' into update-v4
+
+[33mcommit 7daabb176ac095e8b75db052b460da4751143d58[m
+Merge: 50f5beb 38fedf7
+Author: Mario Colombo <mario@what.digital>
+Date:   Wed Sep 29 22:03:09 2021 +0200
+
+    Merge pull request #13 from django-cms/main
+    
+    backport
+
+[33mcommit 38fedf77198c5ac37d4c620edbaf08d69cf9188d[m
+Merge: 92d32a6 2ce54ba
+Author: Mario Colombo <mario@what.digital>
+Date:   Wed Sep 29 22:01:21 2021 +0200
+
+    Merge pull request #12 from crydotsnake/main
+    
+    TASK: Update docker-compose commands
+
+[33mcommit 2ce54ba8022d899e3ac9e060419ae48d3594dbe7[m
+Author: Simon Krull <simondotunix@gmail.com>
+Date:   Wed Sep 29 13:43:56 2021 +0200
+
+    TASK: Update docker compose commands
+
+[33mcommit 689621b13d6dad4669aa7b909d75458351c0e66a[m
+Author: Simon Krull <crydotsnakegithub@gmail.com>
+Date:   Fri Sep 24 15:23:24 2021 +0200
+
+    FIX: docker-compose commands
+
+[33mcommit 92d32a6cf9dfe9cd5d3bcaaf71c7c23df35908db[m
+Merge: a22bcc7 50f5beb
+Author: Mario Colombo <mario@what.digital>
+Date:   Fri Sep 24 09:39:14 2021 +0200
+
+    Merge pull request #8 from django-cms/develop
+    
+    bootstrap 5 and django-filer 2.1 RC4
+
+[33mcommit a22bcc7742abb94918039687d863d122605abc06[m
+Merge: d682b11 4e6a86a
+Author: Mario Colombo <mario@what.digital>
+Date:   Mon Sep 20 11:13:09 2021 +0200
+
+    Merge pull request #10 from crydotsnake/main
+    
+    TASK: Update docker-compose command.
+
+[33mcommit 4e6a86aa88b6e4da52629c091cdeb4d97a7d9dd0[m
+Author: Simon Krull <crydotsnakegithub@gmail.com>
+Date:   Mon Sep 20 11:05:01 2021 +0200
+
+    TASK: Update docker-compose command.
+
+[33mcommit 9ef676de445d542a1ee754371ef912afe61546f0[m
+Merge: c2ff347 d682b11
+Author: Mario Colombo <mario@what.digital>
+Date:   Fri Sep 17 15:07:29 2021 +0200
+
+    Merge branch 'main' into support/cms-4.0.x
+
+[33mcommit 50f5bebfc19f76997cce94d85cbcac592237958b[m
+Author: Mario Colombo <mario@what.digital>
+Date:   Thu Sep 16 11:04:11 2021 +0200
+
+    test version with filer RC4 and bootstrap5
+
+[33mcommit c2ff347ee809c80e6e7caeb5df2775dafa09df86[m
+Author: fp4code <fabrice.pardo@universite-paris-saclay.fr>
+Date:   Tue Aug 31 17:48:56 2021 +0200
+
+    Remove or change obsolete Divio links (#6)
+
+[33mcommit d682b11c8ca9c46416b1e8fef0a16d1930b8d3bf[m
+Author: Mario Colombo <mario@what.digital>
+Date:   Wed Aug 18 02:44:52 2021 +0200
+
+    deployment docs
+
+[33mcommit aabd2ea10ee1c6c69e3f713e72818dcb9d337fbb[m
+Author: Mario Colombo <mario@what.digital>
+Date:   Sat Aug 14 19:35:29 2021 +0200
+
+    clean up static files
+
+[33mcommit f257bfbc70ffb4e58990d11db097712fc0c8d36c[m
+Author: Mario Colombo <mario@what.digital>
+Date:   Sat Aug 14 18:57:31 2021 +0200
+
+    make allowed hosts work
+
+[33mcommit dd9c5ac70d9e67e122ee69213df69c047261e61d[m
+Author: Mario Colombo <mario@what.digital>
+Date:   Sat Aug 14 18:50:19 2021 +0200
+
+    fix DEBUG env var in local dev env
+
+[33mcommit 6b1f8c550b24df11175ddf8a9a2355cc90d9ba84[m
+Author: Mario Colombo <mario@what.digital>
+Date:   Sat Aug 14 18:49:39 2021 +0200
+
+    standardize DEBUG env var
+
+[33mcommit 2ce534ffc26a332b94ad54fb2811be9eceb3df3c[m
+Author: Mario Colombo <mario@what.digital>
+Date:   Sat Aug 14 18:47:45 2021 +0200
+
+    better deployment docs
+
+[33mcommit 043dceefe8febd6509cd114d135f8e5d64f12f44[m
+Author: Mario Colombo <mario@what.digital>
+Date:   Sat Aug 14 18:42:17 2021 +0200
+
+    allow for simpler production deployment
+
+[33mcommit 17f2aff609a8487207072ba8e3196da5645cbdbe[m
+Author: Mario Colombo <mario@what.digital>
+Date:   Sat Aug 14 18:23:18 2021 +0200
+
+    fix collectstatic best practises
+
+[33mcommit fce402a1732aae1fc13d455c5621c75084adff5a[m
+Author: Mario Colombo <mario@what.digital>
+Date:   Sat Aug 14 18:20:01 2021 +0200
+
+    move static folder to backend where it belongs
+
+[33mcommit 0f846efcc17b8c55de9c19ce6d079c17a51dd51a[m
+Author: Mario Colombo <mario@what.digital>
+Date:   Sat Aug 14 18:01:48 2021 +0200
+
+    add static files for whitenoise demo
+
+[33mcommit e3507cbffe8b4f067595fa872e99844a7c2e1dfd[m
+Author: Mario Colombo <mario@what.digital>
+Date:   Sat Aug 14 17:48:12 2021 +0200
+
+    standardize app name
+
+[33mcommit 5640fc0fd5d85e8467d5462673ee69d3adbd5744[m
+Author: Mario Colombo <mario@what.digital>
+Date:   Sat Aug 14 17:27:25 2021 +0200
+
+    simplify db setup
+
+[33mcommit ebbcf935734f34f63af447b276abbd9cb966a1b5[m
+Author: Mario Colombo <mario@what.digital>
+Date:   Sat Aug 14 16:45:43 2021 +0200
+
+    fully support static files serving (also for local dev env)
+
+[33mcommit f8b577edc2f3443a2fb4cecb790ae0cfa92d2b73[m
+Author: Mario Colombo <mario@what.digital>
+Date:   Sat Aug 14 13:56:17 2021 +0200
+
+    upgrade to django CMS 3.9
+
+[33mcommit 4a58b5d8dd6d10a286ffcbc0c139c2b00acc68db[m
+Merge: 20cf675 6442b2d
+Author: Mario Colombo <mario@what.digital>
+Date:   Fri Mar 12 14:59:37 2021 +0100
+
+    Merge pull request #4 from Aiky30/feature/django-cms-40-compat
+    
+    WIP: django CMS 4.0 compatible version
+
+[33mcommit 20cf6752a74168db239dae94766697c8b6d718a5[m
+Merge: 7c5f996 b6a73f0
+Author: Vinit Kumar <mail@vinitkumar.me>
+Date:   Sat Mar 6 01:51:02 2021 +0530
+
+    Merge pull request #5 from SocialSchools/fix/issue-with-postgres-not-running-ci
+    
+    fix: postgres was not getting init because of wrong url
+
+[33mcommit b6a73f0cf059a6549e654d0b882be9ef9ad3a102[m
+Author: Vinit Kumar <mail@vinitkumar.me>
+Date:   Sat Mar 6 01:47:00 2021 +0530
+
+    fix: wrong db name
